@@ -1,0 +1,2 @@
+# ubuntu ssh
+This repository is used to house the docker file (and startup script) used to ssh into other devices. This is necessary as windows doesn't allow correct permissions to be set on ssh keys preventing ssh into other linux devices. This container expects your local .ssh folder to be mounted to `/.ssh`. The startup script will copy the contents of that folder to the home directory in the container, and set permissions on all files in the .ssh folder (600).
